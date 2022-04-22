@@ -1,5 +1,5 @@
 ### PythonPortfolio
-A portfolio of python projects.
+A portfolio of python projects to demonstrate skill sets, & python knowledge
 
 #### Contents
 
