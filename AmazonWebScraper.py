@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-# To send email
+## To send email
 from smtplib import SMTP
 
 ## Product URL: assign desired amazon product

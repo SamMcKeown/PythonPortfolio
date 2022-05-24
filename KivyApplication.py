@@ -16,7 +16,7 @@ class HolaPuggle(App):
         
         Returns
         -------
-        kivy.uix.gridlayout.GridLayout
+        self.window: kivy.uix.gridlayout.GridLayout
             Returns the application window as the root widget
         '''
 
@@ -27,7 +27,7 @@ class HolaPuggle(App):
         self.window.pos_hint = {'center_x': 0.5, 'center_y': 0.5}
         
         # Image
-        self.image = Image(source='images/image_1.png', allow_stretch=True, 
+        self.image = Image(source='data/images/image_1.png', allow_stretch=True, 
                            size_hint_y=None, height=600)
         self.window.add_widget(self.image)
 
@@ -71,9 +71,9 @@ class HolaPuggle(App):
     def change_image(self, instance):
         '''Changes the intitial image'''
         if self.user.text != '' and not self.user.text.isspace():
-            self.image.source='images/image_3.png'
+            self.image.source='data/images/image_3.png'
         else:
-            self.image.source='images/image_2.png'
+            self.image.source='data/images/image_2.png'
 
     def clear_input_2(self, instance):
         '''Clears hint text'''
